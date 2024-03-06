@@ -1,17 +1,15 @@
 {% load static %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="static/Css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="{% static 'swiper/swiper-bundle.min.css' %}"/>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="{% static 'CSS/swiper-bundle.min.css' %}"/>
     <title>E-commerce Landing Page</title>
   </head>
   <style>
@@ -362,12 +360,12 @@
       </div>
 
 <!-- products  -->
-<div  class="products px-4 py-4">
+<div  class="products px-2 xl:px-4 py-4">
   <h3 class="text-xl text-gray-800 font-medium">Our Top Electronics: </h3>
    <!-- Slider main container -->
-<div class="swiper  xl:max-w-7xl h-96  my-8 mx-2">
+<div class="swiper xl:max-w-7xl h-96  my-8 mx-2">
   <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
+  <div class="swiper-wrapper pt-4">
     <!-- Slides -->
     <!-- slide 1 -->
     <div class="swiper-slide overflow-hidden w-80 h-80 bg-white rounded-lg shadow-xl hover:scale-105">
@@ -561,9 +559,9 @@
     <!-- Slide 9 -->
     <div class="swiper-slide overflow-hidden w-80 h-80 bg-white rounded-lg shadow-xl hover:scale-105">
       <div class="flex flex-col items-start ">
-        <img class="widthSwiper object-cover"  src="{% static 'images/Iphone-12-image.jpg' %}" alt="">
+        <img class="widthSwiper object-cover"  src="{% static 'images/Iphone-15-plus.jpg' %}" alt="">
         <div class="flex flex-col gap-2 px-2 py-2">
-          <h4 class="text-sm font-medium ">IPHONE 13</h4>
+          <h4 class="text-sm font-medium ">IPHONE 15 PLUS</h4>
           <p class="text-xs text-gray-400">APPLE</p>
           <div class="flex items-center gap-3">
           <div class="flex items-center gap-2">
@@ -571,68 +569,45 @@
           <span class="text-xs font-medium text-gray-400">4.5</span>
           </div>
           <div>
-            <span class="text-[10px] text-gray-400 p-1 bg-gray-200">7,354 sold</span>
+            <span class="text-[10px] text-gray-400 p-1 bg-gray-200">1,354 sold</span>
           </div>
         </div>
         <div class="flex items-center gap-2">
-          <p class="text-[10px] text-gray-400"><del>$899</del></p>
-          <p class="text-xs font-semibold text-black">$799</p>
+          <p class="text-[10px] text-gray-400"><del>$1049</del></p>
+          <p class="text-xs font-semibold text-black">$999</p>
         </div>
         </div>
       </div>
     </div>
-    <!-- Slide 10 -->
-    <div class="swiper-slide overflow-hidden w-80 h-80 bg-white rounded-lg shadow-xl hover:scale-105">
-      <div class="flex flex-col items-start ">
-        <img class="widthSwiper object-cover"  src="{% static 'images/Iphone-12-image.jpg' %}" alt="">
-        <div class="flex flex-col gap-2 px-2 py-2">
-          <h4 class="text-sm font-medium ">IPHONE 13</h4>
-          <p class="text-xs text-gray-400">APPLE</p>
-          <div class="flex items-center gap-3">
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-          <span class="text-xs font-medium text-gray-400">4.5</span>
-          </div>
-          <div>
-            <span class="text-[10px] text-gray-400 p-1 bg-gray-200">7,354 sold</span>
-          </div>
-        </div>
+  <!-- slide 10 -->
+  <div class="swiper-slide overflow-hidden w-80 h-80 bg-white rounded-lg shadow-xl hover:scale-105">
+    <div class="flex flex-col items-start ">
+      <img class="widthSwiper object-cover"  src="{% static 'images/Iphone-15-image.jpg' %}" alt="">
+      <div class="flex flex-col gap-2 px-2 py-2">
+        <h4 class="text-sm font-medium ">IPHONE 15 PRO MAX</h4>
+        <p class="text-xs text-gray-400">APPLE</p>
+        <div class="flex items-center gap-3">
         <div class="flex items-center gap-2">
-          <p class="text-[10px] text-gray-400"><del>$899</del></p>
-          <p class="text-xs font-semibold text-black">$799</p>
+          <svg class="w-5 h-5 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
+        <span class="text-xs font-medium text-gray-400">4.5</span>
         </div>
+        <div>
+          <span class="text-[10px] text-gray-400 p-1 bg-gray-200">1,654 sold</span>
         </div>
       </div>
-    </div>
-    <!-- Slide 11 -->
-    <<div class="swiper-slide overflow-hidden w-80 h-80 bg-white rounded-lg shadow-xl hover:scale-105">
-      <div class="flex flex-col items-start ">
-        <img class="widthSwiper object-cover"  src="{% static 'images/Iphone-12-image.jpg' %}" alt="">
-        <div class="flex flex-col gap-2 px-2 py-2">
-          <h4 class="text-sm font-medium ">IPHONE 13</h4>
-          <p class="text-xs text-gray-400">APPLE</p>
-          <div class="flex items-center gap-3">
-          <div class="flex items-center gap-2">
-            <svg class="w-5 h-5 text-yellow-500 fill-current" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" ><path d="M21.947 9.179a1.001 1.001 0 0 0-.868-.676l-5.701-.453-2.467-5.461a.998.998 0 0 0-1.822-.001L8.622 8.05l-5.701.453a1 1 0 0 0-.619 1.713l4.213 4.107-1.49 6.452a1 1 0 0 0 1.53 1.057L12 18.202l5.445 3.63a1.001 1.001 0 0 0 1.517-1.106l-1.829-6.4 4.536-4.082c.297-.268.406-.686.278-1.065z"></path></svg>
-          <span class="text-xs font-medium text-gray-400">4.5</span>
-          </div>
-          <div>
-            <span class="text-[10px] text-gray-400 p-1 bg-gray-200">7,354 sold</span>
-          </div>
-        </div>
-        <div class="flex items-center gap-2">
-          <p class="text-[10px] text-gray-400"><del>$899</del></p>
-          <p class="text-xs font-semibold text-black">$799</p>
-        </div>
-        </div>
+      <div class="flex items-center gap-2">
+        <p class="text-[10px] text-gray-400"><del>$1099</del></p>
+        <p class="text-xs font-semibold text-black">$999</p>
+      </div>
       </div>
     </div>
+  </div>
   </div>
   <div class="hidden lg:inline-flex swiper-button-prev"></div>
   <div class="hidden lg:inline-flex  swiper-button-next"></div>
 </div>
 </div>
-    <script src="{% static '/Js/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'swiper/swiper-bundle.min.js' %}"></script>
 
     <script src="{% static '/Js/main.js' %}"></script>
     
